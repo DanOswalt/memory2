@@ -1,0 +1,67 @@
+html {
+  font-family: 'Josefin Sans';
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: #6d695c;
+  background-image:
+  repeating-linear-gradient(120deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),
+  repeating-linear-gradient(60deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),
+  linear-gradient(60deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1)),
+  linear-gradient(120deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1));
+  background-size: 70px 120px;
+}
+
+
+.wrapper {
+  margin: auto 0;
+}
+
+h1 {
+  color: orangered;
+}
+
+h2 {
+  color: #222;
+}
+
+button {
+  font-size: 16px;
+  vertical-align: bottom;
+  font-family: 'Josefin Sans';
+  cursor: pointer;
+}
+
+.tile {
+  display: inline-block;
+  height: 80px;
+  width: 80px;
+  cursor: pointer;
+  margin: 3px;
+  border-radius: 4px;
+  border-left: #222 2px solid;
+  border-bottom: black 2px solid;
+}
+
+.facedown {
+  background-color: #444;
+}
+
+.tile:hover {
+  border: 3px solid orangered;
+}
+
+.board {
+  width: 550px;
+  height: 560px;
+  /* border: 1px solid black; */
+}
+
+/* .selected {
+  background-color: black;
+} */

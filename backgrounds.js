@@ -1,0 +1,20 @@
+const backgrounds = [
+  "gray",
+  "red",
+  "blue",
+  "green",
+  "yellow",
+  "purple",
+  "magenta",
+  "tomato",
+  "lime",
+  "maroon",
+  "olive",
+  "aquamarine",
+  "navy",
+  "orange",
+  "burlywood",
+  "deeppink",
+  "white",
+  "plum"
+]

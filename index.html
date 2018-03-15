@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>memory</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/chance/1.0.13/chance.min.js" charset="utf-8"></script> -->
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    <script src="chance.js" charset="utf-8"></script>
+    <script src="vue.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <div id="vue-app">
+      <center><div id="wrapper">
+        <h1>memory</h1>
+        <button @click="newGame" type="button">New Game</button>
+        <h2>score: {{ score }} matches: {{ matchesCount }} streak: {{ streak }}</h2>
+        <div class="board">
+          <template v-for="(tile, i) in shuffledSet">
+            <div @click="select(i, tile.matchId)"
+                 :class="{tile: true, selected: tile.selected, facedown: !tile.selected}"
+                 :style="{backgroundColor: tile.background}"
+                 :data-match-id="tile"
+                 :tile-id="i">
+            </div>
+          </template>
+        </div>
+      </div></center>
+    </div>
+    <script src="backgrounds.js" charset="utf-8"></script>
+    <script src="tiles.js" charset="utf-8"></script>
+    <script src="app.js" charset="utf-8"></script>
+  </body>
+</html>
